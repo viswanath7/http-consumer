@@ -3,8 +3,6 @@ package com.example.application
 import cats.effect._
 import cats.implicits._
 import com.typesafe.scalalogging.Logger
-import org.apache.commons.lang3.StringUtils
-
 import scala.concurrent.duration._
 import scala.language.postfixOps
 
