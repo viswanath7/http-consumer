@@ -23,13 +23,14 @@ lazy val cats = Seq(
 Seq("dev.profunktor" %% "console4cats" % console4CatsVersion,
 "com.github.cb372" %% "cats-retry" % catsRetryVersion)
 libraryDependencies ++= cats ++ Seq(
+  "com.twitter"                   %% "finagle-http"                   % "20.4.1",
   "com.chuusai"                   %% "shapeless"                      % shapelessVersion,
   "com.typesafe"                   % "config"                         % typesafeConfigVersion,
   "ch.qos.logback"                % "logback-classic"                 % logbackVersion,
   "com.typesafe.scala-logging"    %% "scala-logging"                  % scalaLoggingVersion,
-  "com.softwaremill.sttp.client"  %% "core"                           % sttpVersion,
-  "com.softwaremill.sttp.client"  %% "async-http-client-backend-cats" % sttpVersion,
-  "com.softwaremill.sttp.client"  %% "slf4j-backend"                  % sttpVersion,
+//  "com.softwaremill.sttp.client"  %% "core"                           % sttpVersion,
+//  "com.softwaremill.sttp.client"  %% "async-http-client-backend-cats" % sttpVersion,
+//  "com.softwaremill.sttp.client"  %% "slf4j-backend"                  % sttpVersion,
   "org.scalatest"                 %% "scalatest"                      % scalaTestVersion      % Test
 )
 
